@@ -1,0 +1,111 @@
+/* General dashboard container styling */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f7fa; 
+}
+
+/* Card styles for individual components */
+.card {
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title styling for each card */
+.card h3 {
+  margin-bottom: 15px;
+  color: #333333; 
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Paragraph and list styling */
+.card p,
+.card ul {
+  color: #555555; 
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* List item styling */
+.card ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.card ul li {
+  background-color: #f9fafb; 
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/* Highlight important details */
+.card ul li strong {
+  color: #0070f3; 
+}
+
+/* Metrics card specific styles */
+.metrics-card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid black;
+  color: #0070f3;
+  width: 25%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 110px;
+  padding-right: 90px;
+  margin-left: 7%;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+
+
+ul{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 30px;
+  color: darkgreen;
+  background: antiquewhite;
+}
+
+.recent{
+  color: red;
+}
+
+li{
+  margin-bottom: 20px;
+}
+
+.dashboard-stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
